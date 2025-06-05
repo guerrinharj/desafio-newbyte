@@ -13,8 +13,8 @@ class ChatChannel < ApplicationCable::Channel
             id: mensagem.id,
             texto: mensagem.texto,
             usuario: {
-            id: usuario.id,
-            username: usuario.username
+                id: usuario.id,
+                username: usuario.username
             },
             created_at: mensagem.created_at.iso8601
         })
