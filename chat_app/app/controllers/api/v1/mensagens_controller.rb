@@ -44,13 +44,13 @@ module Api
 
             def serialize(mensagem)
                 {
-                id: mensagem.id,
-                texto: mensagem.texto,
-                usuario: {
-                    id: mensagem.usuario.id,
-                    username: mensagem.usuario.username
-                },
-                created_at: mensagem.created_at
+                    id: mensagem.id,
+                    texto: mensagem.texto,
+                    usuario: {
+                        id: mensagem.usuario.id,
+                        username: mensagem.usuario.username
+                    },
+                    created_at: mensagem.created_at
                 }
             end
         end

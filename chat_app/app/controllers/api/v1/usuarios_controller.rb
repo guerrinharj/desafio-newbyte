@@ -15,7 +15,7 @@ module Api
                         confirmation_link: confirmation_link,
                         usuario: usuario.slice(:id, :username, :email)
                     }, status: :created
-                    else
+                else
                     render json: { errors: usuario.errors.full_messages }, status: :unprocessable_entity
                 end
             end
